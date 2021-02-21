@@ -18,7 +18,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 
-package com.goodiebag.pinview;
+package com.meken.pinview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -42,6 +42,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.goodiebag.pinview.R;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

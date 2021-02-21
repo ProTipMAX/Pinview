@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:text="Number"/>
 
-    <com.goodiebag.pinview.Pinview
+    <com.meken.pinview.Pinview
         android:id="@+id/pinview1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:text="Text"/>
 
-    <com.goodiebag.pinview.Pinview
+    <com.meken.pinview.Pinview
         android:id="@+id/pinview2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:text="Number-Password"/>
 
-    <com.goodiebag.pinview.Pinview
+    <com.meken.pinview.Pinview
         android:id="@+id/pinview3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:text="Text-Password"/>
 
-    <com.goodiebag.pinview.Pinview
+    <com.meken.pinview.Pinview
         android:id="@+id/pinview4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:text="Custom Pin View"/>
 
-    <com.goodiebag.pinview.Pinview
+    <com.meken.pinview.Pinview
         android:id="@+id/pinview5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

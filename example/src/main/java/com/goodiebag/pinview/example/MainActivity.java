@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.goodiebag.pinview.Pinview;
+import com.meken.pinview.Pinview;
 
 public class MainActivity extends AppCompatActivity {
     @Override
