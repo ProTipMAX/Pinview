@@ -443,12 +443,7 @@ public class Pinview extends LinearLayout implements TextWatcher, View.OnFocusCh
                 editTextList.get(currentTag).setText("");
         }
 
-        for (int index = 0; index < mPinLength; index++) {
-            if (editTextList.get(index).getText().length() < 1)
-                break;
-            if (mListener != null)
-                mListener.onDataEntered(this, true);
-        }
+        if (mListener != null) mListener.onDataEntered(this, true);
         updateEnabledState();
     }
 
