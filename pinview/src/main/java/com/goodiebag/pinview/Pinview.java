@@ -412,42 +412,7 @@ public class Pinview extends LinearLayout implements TextWatcher, View.OnFocusCh
      */
     @Override
     public void onTextChanged(CharSequence charSequence, int start, int i1, int count) {
-        if (charSequence.length() == 1 && currentFocus != null) {
-            final int currentTag = getIndexOfCurrentFocus();
-            if (currentTag < mPinLength - 1) {
-                long delay = 1;
-                if (mPassword)
-                    delay = 25;
-                this.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        EditText nextEditText = editTextList.get(currentTag + 1);
-                        nextEditText.setEnabled(true);
-                        nextEditText.requestFocus();
-                    }
-                }, delay);
-            } else {
-                //Last Pin box has been reached.
-            }
-            if (currentTag == mPinLength - 1 && inputType == InputType.NUMBER || currentTag == mPinLength - 1 && mPassword) {
-                finalNumberPin = true;
-            }
-
-        } else if (charSequence.length() == 0) {
-            int currentTag = getIndexOfCurrentFocus();
-            mDelPressed = true;
-            //For the last cell of the non password text fields. Clear the text without changing the focus.
-            if (editTextList.get(currentTag).getText().length() > 0)
-                editTextList.get(currentTag).setText("");
-        }
-
-        for (int index = 0; index < mPinLength; index++) {
-            if (editTextList.get(index).getText().length() < 1)
-                break;
-            if (!fromSetValue && index + 1 == mPinLength && mListener != null)
-                mListener.onDataEntered(this, true);
-        }
-        updateEnabledState();
+        getValue();
     }
 
     /**
